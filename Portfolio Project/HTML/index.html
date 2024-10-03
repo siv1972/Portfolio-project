@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/18d255b473.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="../MEDIA/IMAGES/My logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FullStack Developer</p>
+                <h1>Hi,I'm <span>Kathirvel</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="../MEDIA/IMAGES/Coat New My Photo.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>FullStack Developer | HTML | CSS | JAVASCRIPT |CORE JAVA | SQL | ADVANCE JAVA | Spring Boot </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>Designing webpage using HTML,CSS,JAVASCRIPT  </li>
+                            <li><span>Backend</span> <br>Core Java,SQL</li>
+                            <li><span>Advance Java</span><br> JDBC,Servlet</li>
+                            <li><span>Framework</span><br> Spring Boot, Hibernate</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024- Current</span><br>Completed the Java Fullstack Course at Qspider Training Institute </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-2024</span><br> B.E-ECE at Mahendra College Of Engineering in Salem</li>
+                            <li><span>2020- (XII) 
+                            </span> <br>T.N.D.T.A.R.M.P.Pulamadan Chettiyar National Higher Secondary
+                            School at Sathankulam</li>
+                            <li><span>2018- (X)</span><br>T.N.D.T.A.R.M.P.Pulamadan Chettiyar National Higher Secondary
+                                School  at Sathankulam</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------------services------------------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>• Recreated ZOMATO website homepage using
+                        HTML and CSS.
+                        </p><br>
+                        <p>• Recreated GOOGLE search homepage using
+                            HTML and CSS.
+                            </p><br>
+                            <p>• Recreated INSTAGRAM Login page using
+                                HTML and CSS.</p>
+
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Database,Backend</h2>
+                    <p>• SQL</p><br>
+                    <p>• Java Database Connectivity(JDBC)</p><br>
+                    <p>• Servlet</p><br>
+                    <p>• Core Java</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Frameworks</h2>
+                    <p>• Spring Boot</p><br>
+                    <p>• Hibernate</p>
+
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------portfolio-->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="../MEDIA/IMAGES/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App Homepage</h3>
+                        <p>It is a Instagram Homepage...</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../MEDIA/IMAGES/work-2.png">
+                    <div class="layer">
+                        <h3>Music Page</h3>
+                        <p>It's Like a Music App,Like a Spotifty...User Hear a Songs Easily</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../MEDIA/IMAGES/food1.jpeg">
+                    <div class="layer">
+                        <h3>Online Food Delivering Page</h3>
+                        <p>It's Look like a ZOMATO Home page....I am Designing the app Real Home page... </p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>  
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----contact-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> kathirvelsubbiah2003@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>6383835215</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100037913765419"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/kathirvel-s-0309202a8/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="../MEDIA/IMAGES/New kathirvel S Co Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contacts-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Kathirvel.Made with <i class="fas fa-heart"></i> by Kathirvel ideas</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        } 
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwIMa1VGKASqJ3O1tCQvYf6sUkwcf3RCvsyqgMZCYRDvd0nrKlds_e3f4lJqOU0LzNB/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
